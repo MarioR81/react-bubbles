@@ -1,5 +1,4 @@
 import React from "react";
-import axios from 'axios';
 import { axiosWithAuth } from "../utils/axiosWithAuth";
 
 class Login extends React.Component{
@@ -38,7 +37,7 @@ login = e => {
 
   render(){
   return (
-    <div>
+    <div className='login'>
       <h1>Welcome to the Bubble App!</h1>
       <p>Log In Here!</p>
       <form onSubmit={this.login}>
